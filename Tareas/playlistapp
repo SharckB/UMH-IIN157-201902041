@@ -45,4 +45,67 @@ export function Cancion2 (props) {
         </label>
       </div>
     )
+}import './App.css';
+import Cancion, {Cancion2} from "./Componentes/Cancion"
+
+function App() {
+
+
+const canciones = {
+  titulo: "De Gloria en Gloria ", 
+  duracion: '3:40',
+  album: "Avivanos", 
+  numero: 4,
+  fechacreacion: "04 de octubre 2014"
+};
+
+const v_titulo= "Avivanos ";
+const v_duracion= 4;
+const v_album= "Avivanos"; 
+const v_numero= 1;
+const v_fechacreacion= "19 de octubre 2010"
+
+const f_saludar= (props) => {
+  alert("Estas escuchando "+props);
 }
+
+
+  return (
+    <div className="App">
+      <header className="App-header">
+          <p>
+           CANCIONES
+        </p>
+        <Cancion2 Ccan={canciones}
+        fnsaludar= {f_saludar}
+        />
+
+<Cancion 
+        
+        titulo= {v_titulo} 
+        duracion= {v_duracion} 
+        album= {v_album}
+        numero= {v_numero}
+        fechacreacion= {v_fechacreacion}
+        fnsaludar= {f_saludar}
+         />
+
+<Cancion 
+        
+        titulo="Dilo" 
+        duracion="4 minutos" 
+        album="Lucia Parquer" 
+        numero="9" 
+        fechacreacion="Noviembre del 2009"
+        fnsaludar= {f_saludar}
+        
+        />
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+
+
