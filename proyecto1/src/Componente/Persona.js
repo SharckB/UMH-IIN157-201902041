@@ -4,11 +4,11 @@ import React from "react";
 export default function Persona(props){
     
     //Asignacion por destructuring
-    const {personaInfo, fnsaludar} = props;
-    const {nombre = "No disponible", apellido = "No disponible"} = personaInfo;  //props por defecto
+    const {personaInfo, fnsaludar} = props;//Aqui se llaman los objetos que se van utilizar
+    const {nombre = "No disponible", apellido = "No disponible"} = personaInfo;  //props por defecto se asigna cuando no hay naa escrito
     
     console.log(nombre); 
-
+ 
     return(
         <div>
             <h2>Datos Personales</h2>
@@ -20,8 +20,8 @@ export default function Persona(props){
                     <tr> <td>nacionalidad:</td> <td> {personaInfo.nacionalidad}</td>  </tr>
                     <tr> <td>genero:      </td> <td> {personaInfo.genero}</td>  </tr>
                     <tr> <td>
-                            <button onClick={ () => fnsaludar(personaInfo.nombre) } >Saludar</button>
-                    </td> </tr>
+                           <center> <button onClick={ () => fnsaludar(personaInfo.nombre) } >Saludar</button> </center>
+                    </td> </tr> 
                 </tbody>
             </table>
         </div>

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import './App.css';
-import Persona from "./components/Persona";
+import Persona from "./Componente/Persona";
 
 function App() {
 
