@@ -36,7 +36,7 @@ const estilos = StyleSheet.create({
         marginBottom:8,
         marginTop:8,
         borderRadius:10,
-        backgroundColor:'#154360'
+        backgroundColor:'#C29696'
     },
     titulo:{
         fontSize:18,

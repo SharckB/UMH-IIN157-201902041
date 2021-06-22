@@ -41,11 +41,7 @@ function App(){
       "..........Felicidades........",
       "Cancion agregada exitosamente",
       [
-        {
-          text: "Cancel",
-          onPress: () => console.log("Cancel Pressed"),
-          style: "cancel"
-        },
+        
         { text: "OK", onPress: () => console.log("OK Pressed") }
       ]
     );
